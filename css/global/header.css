@@ -1,6 +1,6 @@
 /* CSS Header*/
 .header-bg {
-  background: #000;
+  background: var(--c12);
 }
 
 .header {
@@ -17,12 +17,8 @@
   gap: 40px;
 }
 .header-menu a {
-  font-family: "Poppins";
-  font-weight: 400;
   display: inline-block;
-  color: #fff;
   padding: 16px 0px;
-  font-size: 1.2rem;
   position: relative;
 }
 
@@ -32,7 +28,7 @@
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #fff;
+  background: var(--c0);
   margin-top: 4px;
   bottom: 0;
   left: 0;
@@ -50,13 +46,13 @@
 
 @media (max-width: 800px) {
   .header-menu a {
-    background: #111;
+    background: var(--c11);
     font-size: 1rem;
     padding: 16px;
     border-radius: 5px;
   }
   .header-menu a:hover {
-    background-color: #2e2e2e;
+    background-color: var(--c10);
   }
   .header-menu a::after {
     display: none;

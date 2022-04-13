@@ -10,19 +10,15 @@
 }
 
 .btn {
-  font-family: 'Poppins';
-  font-weight: 400;
+  font: 600 1.125rem/1.5 "Poppins", sans-serif;
   display: inline-block;
-  background: linear-gradient(#FFBF00, #F2A50C);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+  background: linear-gradient(#ffbf00, #f2a50c);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
   padding: 16px 32px;
   border-radius: 5px;
-  font-size: 1.125rem;
-  line-height: 1.33;
-  font-weight: 600;
   text-transform: uppercase;
-  color: #332200;
+  color: var(--p5);
 }
 .btn:hover {
-  background: linear-gradient(#FFB60d, #e59317);
+  background: linear-gradient(#ffb60d, #e59317);
 }
