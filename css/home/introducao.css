@@ -1,7 +1,8 @@
 /* CSS Instrodução home */
 
 .introducao-bg {
-  background-color: var(--c12);
+  background: var(--c12) url(../../img/dec/bottom-left.svg) no-repeat bottom
+    160px left 20px;
   box-shadow: inset 0 -120px var(--c0);
 }
 .introducao {
@@ -24,16 +25,28 @@
   margin-bottom: 32px;
 }
 .introducao h1 a {
-  font-weight: 700;
-  box-shadow: inset 0 0 0 0 var(--p1);
-  margin: 0 -0.25rem;
-  padding: 0 0.25rem;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: inline-block;
+  position: relative;
 }
-.introducao h1 a:hover {
-  box-shadow: inset 288px 0 0 0 var(--p1);
-  font-weight: 700;
-  color: var(--p5);
+
+.introducao h1 a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: var(--c0);
+  margin-top: 4px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.introducao h1 a:hover:after {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 .introducao p {
   margin-bottom: 32px;
